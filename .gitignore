@@ -1,0 +1,15 @@
+*~
+/data
+/build
+/doxygen
+*.tsv
+/sim_imgs
+*.so
+*kdev4*
+*.caffemodel
+*.caffemodel.h5
+*.pyc
+*.out
+*.zip
+/tasks/R2R/data/*.json
+/tasks/R2R/data/*_vocab.txt

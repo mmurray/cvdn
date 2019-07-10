@@ -1,0 +1,82 @@
+
+#container, #container a{
+	padding:20px;
+	font-size:20px;
+	text-align:left;
+	background-color:AliceBlue;
+}
+
+.btn div{
+	font-size:20px;
+}
+
+.td {
+	padding:6px;
+}
+.th {
+	padding:6px;
+}
+
+.dialog_table{
+	border-collapse:separate;
+	font-size:20px;
+	border-spacing:6px;
+	margin: 6px auto;
+	width:100%;
+}
+
+.chat_header_row {
+	color:White;
+	background-color:Chocolate;
+	text-align:center;
+}
+
+.chat_you_row {
+	background-color:Bisque;
+	text-align:left;
+
+}
+
+.chat_partner_row {
+	background-color:Beige;
+	text-align:right;
+}
+
+canvas {
+	width: 100% !important;
+	height: auto !important;
+}
+
+#inst_div h2 {
+	font-size:18px;
+	font-weight:normal;
+	padding-bottom:0;
+	margin-bottom: 5px;
+}
+
+#inst_div p {
+	font-size: 14px;
+}
+
+#inst_div {
+	font-size: 14px;
+}
+
+.alert {
+    display: flex;
+    flex-direction: row;
+}
+
+.alert .glyphicon {
+    margin-right: 8px;
+    align-self: center; // if you want it centered vertically
+}
+
+.expand_caret {
+    transform: scale(1.0);
+    margin-left: 8px;
+    margin-top: -4px;
+}
+button[aria-expanded='true'] > .expand_caret {
+    transform: scale(1.0) rotate(-180deg);
+}
