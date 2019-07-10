@@ -1,5 +1,6 @@
 # Vision-and-Dialog Navigation
-This repository contains code for the paper **Vision-and-Dialog Navigation**, submitted to the 3rd Conference on Robot Learning (CoRL 2019).
+This repository contains code for the paper **Vision-and-Dialog Navigation**.
+Connect to a [live demo](https://cvdn.dev/) of the interface used to collect dialogs in two tabs to play a game with yourself as both partners.
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=_SCE9e2S-HI" target="_blank"><img src="teaser/demo_video.png" 
