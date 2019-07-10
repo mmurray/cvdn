@@ -1,5 +1,5 @@
 #!/bin/sh
 
-wget https://mp-dialog.s3-us-west-2.amazonaws.com/data/v1/ndh/train.json -P tasks/NDH/data/
-wget https://mp-dialog.s3-us-west-2.amazonaws.com/data/v1/ndh/val_seen.json -P tasks/NDH/data/
-wget https://mp-dialog.s3-us-west-2.amazonaws.com/data/v1/ndh/val_unseen.json -P tasks/NDH/data/
+wget https://cvdn.dev/dataset/NDH/train_val/train.json -P tasks/NDH/data/
+wget https://cvdn.dev/dataset/NDH/train_val/val_seen.json -P tasks/NDH/data/
+wget https://cvdn.dev/dataset/NDH/train_val/val_unseen.json -P tasks/NDH/data/

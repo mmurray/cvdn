@@ -36,10 +36,18 @@ We recommend using the mattersim [Dockerfile](Dockerfile) to install the simulat
 
 ### CVDN Dataset Download
 
+Download the `train`, `val_seen`, `val_unseen`, and `test` splits of the whole CVDN dataset by executing the following script:
+```
+tasks/CVDN/data/download.sh
+```
+
+### NDH Task Data Download
+
 Download the `train`, `val_seen`, `val_unseen`, and `test` splits for NDH by executing the following script:
 ```
 tasks/NDH/data/download.sh
 ```
+
 
 ### Matterport3D Dataset Download
 
