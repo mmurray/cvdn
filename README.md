@@ -1,5 +1,15 @@
 # Vision-and-Dialog Navigation
-This repository contains code for the paper **Vision-and-Dialog Navigation**.
+This repository contains code for the paper [**Vision-and-Dialog Navigation**](https://arxiv.org/abs/1907.04957).
+
+```bibtex
+@inproceedings{thomason:arxiv19,
+  title={Vision-and-Dialog Navigation},
+  author={Jesse Thomason and Michael Murray and Maya Cakmak and Luke Zettlemoyer},
+  booktitle={arXiv},
+  year={2019}
+}
+```
+
 Connect to a [live demo](https://cvdn.dev/) of the interface used to collect dialogs in two tabs to play a game with yourself as both partners.
 
 <p align="center">
