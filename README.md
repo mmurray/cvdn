@@ -59,6 +59,10 @@ Download the `train`, `val_seen`, `val_unseen`, and `test` splits for NDH by exe
 tasks/NDH/data/download.sh
 ```
 
+### NDH Test Performance
+
+To evaluate on the unseen test instances, submit to our [leaderboard](https://evalai.cloudcv.org/web/challenges/challenge-page/463/overview) on EvalAI with your model output on the `test_cleaned` split.
+
 
 ### Matterport3D Dataset Download
 
