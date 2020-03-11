@@ -144,7 +144,7 @@ def eval_simple_agents():
     path_type = 'trusted_path'
 
     ''' Run simple baselines on each split. '''
-    for split in ['train', 'val_seen', 'val_unseen', 'test']:
+    for split in ['train', 'val_seen', 'val_unseen']:
         env = R2RBatch(None, batch_size=1, splits=[split], path_type=path_type)
         ev = Evaluation([split], path_type=path_type)
 
