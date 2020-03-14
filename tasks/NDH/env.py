@@ -252,6 +252,10 @@ class R2RBatch():
         obs = []
         for i,(feature,state) in enumerate(self.env.getStates()):
             item = self.batch[i]
+            if self.path_type in item:
+                target = item[self.path_type][-1]
+            else:
+                target = item['start_pano']['pano']
             obs.append({
                 'inst_idx': item['inst_idx'],
                 'scan': state.scanId,
@@ -263,7 +267,7 @@ class R2RBatch():
                 'step': state.step,
                 'navigableLocations': state.navigableLocations,
                 'instructions': item['instructions'],
-                'teacher': self._shortest_path_action(state, item[self.path_type][-1]),
+                'teacher': self._shortest_path_action(state, target),
             })
             if 'instr_encoding' in item:
                 obs[-1]['instr_encoding'] = item['instr_encoding']
@@ -273,7 +277,11 @@ class R2RBatch():
         ''' Load a new minibatch / episodes. '''
         self._next_minibatch()
         scanIds = [item['scan'] for item in self.batch]
-        viewpointIds = [item[self.path_type][0] for item in self.batch]
+        if self.path_type in self.batch[0]:
+            viewpointIds = [item[self.path_type][0] for item in self.batch]
+        else:
+            # In the test dataset there is no path provided, so we just load the start viewpoint
+            viewpointIds = [item['start_pano']['pano'] for item in self.batch]
         headings = [item['start_pano']['heading'] for item in self.batch]
         self.env.newEpisodes(scanIds, viewpointIds, headings)
         return self._get_obs()   
